@@ -4,6 +4,14 @@ class LinkedList
   attr_accessor :head_node
 
   def append(value)
+    new_node = Node.new
+    new_node.value = value
+
+    if head_node.nil?
+      self.head_node = new_node
+    else
+      puts 'Get tail and assign next as new node'
+    end
   end
 
   def prepend(value)
