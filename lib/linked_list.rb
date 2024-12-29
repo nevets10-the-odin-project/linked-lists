@@ -1,9 +1,7 @@
 require_relative './node'
 
 class LinkedList
-  def initialize
-    self.head_node = Node.new
-  end
+  attr_accessor :head_node
 
   def append(value)
   end
