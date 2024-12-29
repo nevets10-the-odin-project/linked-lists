@@ -21,6 +21,7 @@ class LinkedList
   end
 
   def head
+    head_node
   end
 
   def tail
