@@ -25,6 +25,11 @@ class LinkedList
   end
 
   def tail
+    cur = head_node
+
+    cur = cur.next_node while cur.next_node
+
+    cur.value
   end
 
   def at(index)
