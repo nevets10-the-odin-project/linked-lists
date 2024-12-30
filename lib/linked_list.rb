@@ -75,6 +75,17 @@ class LinkedList
   end
 
   def find(value)
+    cur = head
+    index = 0
+
+    while cur
+      return index if cur.value == value
+
+      index += 1
+      cur = cur.next_node
+    end
+
+    nil
   end
 
   def to_s

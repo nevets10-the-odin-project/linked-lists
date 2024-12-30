@@ -11,5 +11,5 @@ list.append('turtle')
 
 puts list
 
-puts "Contains turtle? #{list.contains?('turtle')}"
-puts "Contains fish? #{list.contains?('fish')}"
+puts "Turtle index: #{list.find('turtle')}"
+puts "Fish index: #{list.find('fish')}"
