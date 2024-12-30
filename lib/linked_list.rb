@@ -23,6 +23,15 @@ class LinkedList
   end
 
   def size
+    cur = head_node
+    count = 0
+
+    while cur
+      count += 1
+      cur = cur.next_node
+    end
+
+    count
   end
 
   def head
