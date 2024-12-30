@@ -45,6 +45,15 @@ class LinkedList
   end
 
   def at(index)
+    cur = head_node
+
+    index.times do
+      return nil if cur.nil?
+
+      cur = cur.next_node
+    end
+
+    cur
   end
 
   def pop
