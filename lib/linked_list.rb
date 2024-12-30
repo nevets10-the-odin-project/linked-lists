@@ -47,7 +47,7 @@ class LinkedList
     cur = head_node
     output = ''
 
-    while cur.next_node
+    while cur
       output += "#{cur.value} -> "
       cur = cur.next_node
     end
