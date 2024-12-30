@@ -11,6 +11,6 @@ list.append('turtle')
 
 puts list
 
-list.insert_at('pig', 1)
+list.remove_at(0)
 
 puts list
