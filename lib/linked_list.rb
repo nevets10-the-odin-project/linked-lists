@@ -10,7 +10,8 @@ class LinkedList
     if head_node.nil?
       self.head_node = new_node
     else
-      puts 'Get tail and assign next as new node'
+      tail_node = tail
+      tail_node.next_node = new_node
     end
   end
 
@@ -26,10 +27,8 @@ class LinkedList
 
   def tail
     cur = head_node
-
     cur = cur.next_node while cur.next_node
-
-    cur.value
+    cur
   end
 
   def at(index)
