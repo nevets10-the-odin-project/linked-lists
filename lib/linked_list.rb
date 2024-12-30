@@ -44,5 +44,15 @@ class LinkedList
   end
 
   def to_s
+    cur = head_node
+    output = ''
+
+    while cur.next_node
+      output += "#{cur.value} -> "
+      cur = cur.next_node
+    end
+
+    output += 'nil'
+    output
   end
 end
