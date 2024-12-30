@@ -18,12 +18,12 @@ class LinkedList
   def prepend(value)
     new_node = Node.new
     new_node.value = value
-    new_node.next_node = head_node
+    new_node.next_node = head
     self.head_node = new_node
   end
 
   def size
-    cur = head_node
+    cur = head
     count = 0
 
     while cur
@@ -39,13 +39,13 @@ class LinkedList
   end
 
   def tail
-    cur = head_node
+    cur = head
     cur = cur.next_node while cur.next_node
     cur
   end
 
   def at(index)
-    cur = head_node
+    cur = head
 
     index.times do
       return nil if cur.nil?
@@ -78,7 +78,7 @@ class LinkedList
   end
 
   def to_s
-    cur = head_node
+    cur = head
     output = ''
 
     while cur
