@@ -57,6 +57,9 @@ class LinkedList
   end
 
   def pop
+    new_last_index = size - 2
+    new_last_node = at(new_last_index)
+    new_last_node.next_node = nil
   end
 
   def contains?(value)

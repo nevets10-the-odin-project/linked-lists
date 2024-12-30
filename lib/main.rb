@@ -5,8 +5,10 @@ list = LinkedList.new
 list.append('dog')
 list.append('cat')
 list.append('parrot')
-list.prepend('hamster')
+list.append('hamster')
 list.append('snake')
 list.append('turtle')
 
-puts list.at(5)
+puts list
+list.pop
+puts list
