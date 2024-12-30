@@ -63,6 +63,15 @@ class LinkedList
   end
 
   def contains?(value)
+    cur = head
+
+    while cur
+      return true if cur.value == value
+
+      cur = cur.next_node
+    end
+
+    false
   end
 
   def find(value)

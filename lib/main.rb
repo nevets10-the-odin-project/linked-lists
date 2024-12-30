@@ -10,5 +10,6 @@ list.append('snake')
 list.append('turtle')
 
 puts list
-list.pop
-puts list
+
+puts "Contains turtle? #{list.contains?('turtle')}"
+puts "Contains fish? #{list.contains?('fish')}"
