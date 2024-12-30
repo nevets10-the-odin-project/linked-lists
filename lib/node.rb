@@ -5,4 +5,8 @@ class Node
     self.value = nil
     self.next_node = nil
   end
+
+  def to_s
+    value
+  end
 end
