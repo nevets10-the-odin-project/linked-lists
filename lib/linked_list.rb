@@ -100,4 +100,19 @@ class LinkedList
     output += 'nil'
     output
   end
+
+  def insert_at(value, index)
+    new_node = Node.new
+    new_node.value = value
+
+    cur = at(index)
+    new_node.next_node = cur
+
+    if index.zero?
+      self.head_node = new_node
+    else
+      prev = at(index - 1)
+      prev.next_node = new_node
+    end
+  end
 end

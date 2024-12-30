@@ -11,5 +11,6 @@ list.append('turtle')
 
 puts list
 
-puts "Turtle index: #{list.find('turtle')}"
-puts "Fish index: #{list.find('fish')}"
+list.insert_at('pig', 1)
+
+puts list
